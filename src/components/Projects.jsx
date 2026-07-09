@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Brain, BookOpen, Briefcase, ArrowUpRight } from 'lucide-react';
+import { Database, Brain, BookOpen, Briefcase } from 'lucide-react';
 
 const academicProjects = [
     {
@@ -66,25 +66,41 @@ const professionalProjects = [
     {
         id: 'prof-2',
         title: 'Generative AI Translation Engine (Live Project)',
-        description: 'Automated multilingual translation using LLMs. Integrated with ADF pipelines and Azure DevOps. Handles real-time client requests and frequent updates. Complete ownership from design to deployment.',
+        description: 'Automated multilingual translation using LLMs. Integrated with ADF pipelines and Azure DevOps to handle real-time client requests, frequent updates. Complete ownership from design to deployment.',
         tags: ['Azure OpenAI', 'LLMs', 'ADF', 'DevOps'],
         icon: <Brain className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-indigo-900/50 to-slate-850/50'
     },
     {
         id: 'prof-3',
-        title: 'Data Migration from Collibra to Databricks',
-        description: 'Built tables, mapped datasets, and created transformation logic. Automated validation logic. Ensured scalable storage in Databricks Lakehouse.',
+        title: 'Data Migration: Collibra to Databricks',
+        description: 'Migrated enterprise datasets by building tables, mapping datasets, and creating transformation/validation logic, ensuring scalable storage in Databricks Lakehouse.',
         tags: ['Databricks', 'SQL', 'PySpark', 'ETL'],
         icon: <Database className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-emerald-900/50 to-slate-850/50'
+    },
+    {
+        id: 'prof-4',
+        title: 'AI Query Conversion Tool',
+        description: 'Converted JSON queries into SQL using LLMs. Created prompt rules, structured responses, and UI integration.',
+        tags: ['Prompt Engineering', 'LLMs', 'SQL', 'Python'],
+        icon: <Brain className="text-accent" size={32} />,
+        image: 'bg-gradient-to-br from-slate-800/50 to-slate-850/50'
+    },
+    {
+        id: 'prof-5',
+        title: 'AI Automation Assistants',
+        description: 'Enterprise assistants for data validation, summarization, insights extraction, document processing, and workflow automation.',
+        tags: ['RAG', 'LangChain', 'Workflow Automation', 'NLP'],
+        icon: <Brain className="text-accent" size={32} />,
+        image: 'bg-gradient-to-br from-cyan-900/50 to-slate-850/50'
     }
 ];
 
 const Projects = () => {
-    const [activeTab, setActiveTab] = useState('academic'); // 'academic' (default) or 'professional'
+    const [activeTab, setActiveTab] = useState('professional'); // 'professional' (default) or 'academic'
 
-    const projectsToDisplay = activeTab === 'academic' ? academicProjects : professionalProjects;
+    const projectsToDisplay = activeTab === 'professional' ? professionalProjects : academicProjects;
 
     return (
         <section id="projects" className="py-24 bg-primary px-6 lg:px-8">
@@ -97,17 +113,6 @@ const Projects = () => {
                     {/* Tabs */}
                     <div className="inline-flex p-1 bg-secondary rounded-xl border border-white/5">
                         <button
-                            onClick={() => setActiveTab('academic')}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all ${
-                                activeTab === 'academic'
-                                    ? 'bg-accent text-primary font-bold shadow-md'
-                                    : 'text-slate-400 hover:text-white-off'
-                            }`}
-                        >
-                            <BookOpen size={16} />
-                            Academic Projects
-                        </button>
-                        <button
                             onClick={() => setActiveTab('professional')}
                             className={`flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all ${
                                 activeTab === 'professional'
@@ -117,6 +122,17 @@ const Projects = () => {
                         >
                             <Briefcase size={16} />
                             Professional Projects
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('academic')}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all ${
+                                activeTab === 'academic'
+                                    ? 'bg-accent text-primary font-bold shadow-md'
+                                    : 'text-slate-400 hover:text-white-off'
+                            }`}
+                        >
+                            <BookOpen size={16} />
+                            Academic Projects
                         </button>
                     </div>
                 </div>
