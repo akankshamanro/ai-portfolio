@@ -3,20 +3,24 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
     {
-        title: 'Programming Language',
-        skills: ['Python', 'SQL', 'Pyspark', 'PyTorch', 'TensorFlow']
+        title: 'Core Programming',
+        skills: ['Python', 'SQL', 'Java', 'Unix Shell Scripting']
     },
     {
-        title: 'Cloud / Tools',
-        skills: ['AWS (EC2, Lambda)', 'Azure (ADF, DevOps)', 'GCP', 'Django', 'RESTful APIs', 'GitHub', 'Flask', 'Databricks', 'JIRA', 'Power BI', 'Docker', 'Git']
+        title: 'Data Science & ML',
+        skills: ['Pandas', 'NumPy', 'Scikit-Learn', 'PySpark', 'Supervised Learning', 'Predictive Modeling', 'Regression Analysis', 'Classification', 'Clustering']
     },
     {
-        title: 'Data Engineering',
-        skills: ['Data Pipelines', 'Data Reporting & Analysis', 'REST API Creation', 'ETL & RAG Pipelines (FAISS, LangChain)', 'AI Workflow Automation']
+        title: 'Generative AI & LLMOps',
+        skills: ['Large Language Models (LLMs)', 'AI Agents', 'LangChain', 'RAG Frameworks', 'Prompt Engineering', 'LoRA/QLoRA Fine-Tuning', 'OpenAI API', 'IBM Watson']
     },
     {
-        title: 'AI / ML',
-        skills: ['Model Deployment & AI Integration', 'Generative AI', 'LLMs (GPT, Llama, Mistral)', 'RAG', 'LoRA/QLoRA Fine-tuning', 'Prompt Engineering (CoT, Few-Shot)', 'Agentic AI']
+        title: 'Data Engineering & Cloud',
+        skills: ['Databricks', 'Apache Airflow', 'IBM DataStage', 'Relational Databases (RDBMS)', 'Azure Data Factory', 'AWS', 'Azure', 'GCP']
+    },
+    {
+        title: 'DevOps & Tools',
+        skills: ['Git', 'GitHub Actions', 'Azure DevOps', 'CI/CD pipelines']
     }
 ];
 
@@ -25,7 +29,7 @@ const Skills = () => {
         <section id="skills" className="py-20 bg-secondary/30">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white-off mb-4">SKILLS</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white-off mb-4">TECHNICAL SKILLS</h2>
                     <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
                 </div>
 

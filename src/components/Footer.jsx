@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Instagram } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -9,21 +9,18 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         <h3 className="text-2xl font-bold text-white-off mb-2">Akanksha Manro</h3>
                         <p className="text-slate-400 text-sm">
-                            Lead Data Scientist & ML Engineer
+                            AI/ML Engineer
                         </p>
                     </div>
 
                     <div className="flex space-x-6">
-                        <a href="#" className="text-slate-400 hover:text-accent transition-colors">
+                        <a href="https://linkedin.com/in/akankshamanro" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors">
                             <Linkedin size={20} />
                         </a>
-                        <a href="#" className="text-slate-400 hover:text-accent transition-colors">
+                        <a href="https://github.com/akankshamanro" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors">
                             <Github size={20} />
                         </a>
-                        <a href="#" className="text-slate-400 hover:text-accent transition-colors">
-                            <Instagram size={20} />
-                        </a>
-                        <a href="mailto:akankshamanro1@gmail.com" className="text-slate-400 hover:text-accent transition-colors">
+                        <a href="mailto:akankshamanro2@gmail.com" className="text-slate-400 hover:text-accent transition-colors">
                             <Mail size={20} />
                         </a>
                     </div>

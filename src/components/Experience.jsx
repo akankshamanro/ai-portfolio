@@ -1,65 +1,42 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Calendar, Briefcase } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const experiences = [
     {
-        year: 'May 2024 – Present',
-        role: 'Data Engineering Analyst',
-        company: 'Optum',
+        year: 'May 2025 – Present',
+        role: 'AI Data Engineer',
+        company: 'UnitedHealth Group - Optum',
         description: [
-            'Supported end-to-end data engineering lifecycle including POCs, design, development, testing, deployment, and maintenance of healthcare data pipelines.',
-            'Worked on IBM DataStage for building and managing ETL workflows to ingest and transform large-scale structured and semi-structured datasets.',
-            'Utilized Apache Airflow for orchestration of complex data pipelines and job scheduling, ensuring timely and reliable data delivery.',
-            'Handled production jobs and data movement on Unix servers, using shell scripting for file management, automation, and process control.',
-            'Diagnosed data quality issues, conducted root cause analysis, implemented fixes, and maintained data audit trails for compliance.',
-            'Applied CI/CD best practices using Azure DevOps for version control, testing, and deployment of data pipeline code.',
-            'Monitored pipeline health using diagnostics tools to proactively detect and resolve data integrity issues.'
+            'Supported the end-to-end data engineering lifecycle for high-volume healthcare systems, including pipeline development, testing, and production monitoring.',
+            'Engineered an AI-driven automated testing framework utilizing Python, Pandas, and SQL to ingest relational reporting payloads and automatically reconcile data mismatches.',
+            'Architected an autonomous, LangChain-based Security Agent using LLMs, conditional Python programmatic logic, and multi-node verification workflows.',
+            'Developed and orchestrated robust ETL workflows using IBM DataStage and Apache Airflow for the ingestion, cleaning, and SQL-based structural transformation of large tabular datasets.',
+            'Managed production data movement on Unix/Linux servers, utilizing Python scripts and shell scripting to automate data monitoring, error diagnostics, and recovery.',
+            'Modernized application workflows and Airflow DAGs, deploying stable updates through existing GitHub Actions CI/CD pipelines.',
+            'Contributed to a cloud modernization POC initiative using Azure Databricks and Azure DevOps to ensure 99.9% data delivery reliability.'
         ]
     },
     {
-        year: 'April 2024 – Present',
-        role: 'Lead Data Scientist',
+        year: 'Oct 2024 – Apr 2025',
+        role: 'Data Scientist (Client-Facing Analytics)',
         company: 'Cognizant',
         description: [
-            'Developed an enterprise-level solution, integrating an AI-powered chatbot, improving metric accessibility for 300+ users and operational efficiency by 35%.',
-            'Proficient in Python, Databricks, Azure DevOps, and Azure Data Factory for data operations and Model/application deployment.',
-            'Built GPT-powered translation application, handling 1,000+ feedback entries per month, with 99% accuracy in language detection and storage.',
-            'Designed and deployed an OpenAI-based summarization model to analyze sentiment and generate success stories.',
-            'Built and optimized ETL pipelines to support data warehousing using SQL, Python, facilitating reliable data management.',
-            'Automated processes and created CI/CD & ADF pipelines for data integration.',
-            'Collaborated with 10+ cross-functional teams to develop scalable data products and integrate AI models, increasing analytics efficiency by 40%.'
+            'Led the deployment of an enterprise analytics platform, writing optimized Python and SQL queries using Databricks and Azure Data Factory to improve metric processing efficiency by ~35%.',
+            'Implemented core supervised machine learning models, Python classification pipelines, and clustering algorithms to evaluate and analyze large relational data tables.',
+            'Designed and deployed OpenAI-based summarization and probabilistic modeling workflows using Python and SQL for automated sentiment analysis and insight extraction from tabular logs.',
+            'Collaborated across 10+ cross-functional teams, translating complex model metrics into clear, actionable technical documentation for client stakeholders.'
         ]
     },
     {
-        year: 'June 2023 – March 2024',
-        role: 'AI/ML Engineer',
+        year: 'June 2023 – Oct 2024',
+        role: 'AI/ML Engineer (Internal R&D Initiatives)',
         company: 'Cognizant',
         description: [
-            'Developed and deployed RAG-based LLM applications using GPT, implementing LoRA/QLoRA fine-tuning and advanced prompt engineering on GCP.',
-            'Automated web deployment using GitHub and Flask with cloud services like Cloud Build.',
-            'Utilized Generative AI, LLM models for 20+ AI use cases.',
-            'Built and maintained data pipelines, CI/CD configurations, and RESTful APIs with Flask to serve ML models.',
-            'Worked with a team of six engineers on innovative GenAI solutions and mentored new members.',
-            'Implemented unit and manual testing to ensure application reliability.',
-            'Developed a synthetic data generator and worked on RAG-based chat applications including Fashion Assistants.',
-            'Developed an OCR application for document processing and parsing, improving data extraction accuracy.'
-        ]
-    },
-    {
-        year: 'February 2022 – August 2022',
-        role: 'Data Engineer Intern',
-        company: 'Cognizant',
-        description: [
-            'Worked on various projects involving data processing & analysis, & visualization using tools such as S3, EC2, Lambda, Redshift, etc.'
-        ]
-    },
-    {
-        year: 'November 2020 – January 2021',
-        role: 'Data Science Intern',
-        company: 'The Sparks Foundation',
-        description: [
-            'Developed machine learning models using Python and Jupyter Notebook, focusing on supervised learning through hands-on experience.'
+            'Built Generative AI agents and proof-of-concept applications on GCP using RAG architectures, utilizing LoRA/QLoRA fine-tuning and strict prompt engineering to maintain model data consistency.',
+            'Developed GPT-based text processing and translation pipelines handling 1,000+ structured records monthly, executing Python-based text cleaning and automated language detection with ~99% accuracy.',
+            'Built synthetic data generators and algorithmic recommendation models using Python to process catalog data and accelerate internal model validation timelines.',
+            'Developed an OCR-based document intelligence solution to extract data from documents and automatically transform them into highly structured SQL datasets.'
         ]
     }
 ];
@@ -69,7 +46,7 @@ const Experience = () => {
         <section id="experience" className="py-20 bg-primary">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white-off mb-4">WORK EXPERIENCE</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white-off mb-4">PROFESSIONAL EXPERIENCE</h2>
                     <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
                 </div>
 
