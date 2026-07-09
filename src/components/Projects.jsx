@@ -57,41 +57,41 @@ const academicProjects = [
 const professionalProjects = [
     {
         id: 'prof-1',
-        title: 'AI Metric Engine',
-        description: 'Automated metric creation, tracking, and SLA monitoring. Used ADF + Databricks + DevOps + AI automation. Dashboard for real-time visibility. Achieved zero SLA breaches and increased accuracy.',
-        tags: ['ADF', 'Databricks', 'Azure DevOps', 'Automation'],
+        title: 'Enterprise Metric Engine & Analytics Platform',
+        description: 'Designed and deployed a large-scale enterprise analytics platform, writing optimized Python and SQL queries using Databricks and Azure Data Factory to improve metric accessibility for 300+ users and increase processing efficiency by ~35%. Features an integrated AI-powered conversational chatbot to automate reporting.',
+        tags: ['Python', 'SQL', 'Databricks', 'Azure Data Factory', 'ML Pipelines', 'Chatbots'],
         icon: <Database className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-blue-900/50 to-slate-850/50'
     },
     {
         id: 'prof-2',
-        title: 'Generative AI Translation Engine (Live Project)',
-        description: 'Automated multilingual translation using LLMs. Integrated with ADF pipelines and Azure DevOps to handle real-time client requests, frequent updates. Complete ownership from design to deployment.',
-        tags: ['Azure OpenAI', 'LLMs', 'ADF', 'DevOps'],
+        title: 'GPT-Powered Text Processing & Translation Pipeline',
+        description: 'Developed high-throughput text processing and translation pipelines handling over 1,000 feedback records monthly. Executed Python-based text cleaning and automated language detection with ~99% accuracy in translation storage.',
+        tags: ['Python', 'GPT Models', 'Azure OpenAI', 'Azure Data Factory', 'CI/CD'],
         icon: <Brain className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-indigo-900/50 to-slate-850/50'
     },
     {
         id: 'prof-3',
-        title: 'Data Migration: Collibra to Databricks',
-        description: 'Migrated enterprise datasets by building tables, mapping datasets, and creating transformation/validation logic, ensuring scalable storage in Databricks Lakehouse.',
-        tags: ['Databricks', 'SQL', 'PySpark', 'ETL'],
+        title: 'Enterprise Data Migration & Cloud Modernization',
+        description: 'Led a key cloud modernization POC initiative using Azure Databricks and Azure DevOps to evaluate, map, and transition legacy delivery workflows to scalable cloud infrastructure, ensuring 99.9% data delivery reliability.',
+        tags: ['PySpark', 'SQL', 'Azure Databricks', 'Azure DevOps', 'Cloud Architecture'],
         icon: <Database className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-emerald-900/50 to-slate-850/50'
     },
     {
         id: 'prof-4',
-        title: 'AI Query Conversion Tool',
-        description: 'Converted JSON queries into SQL using LLMs. Created prompt rules, structured responses, and UI integration.',
-        tags: ['Prompt Engineering', 'LLMs', 'SQL', 'Python'],
-        icon: <Brain className="text-accent" size={32} />,
+        title: 'AI-Driven Automated Testing Framework',
+        description: 'Engineered a validation testing framework utilizing Python, Pandas, SQL, and Stored Procedures to traverse reporting payloads, ingest relational data tables, and automatically reconcile mismatches into validation reports.',
+        tags: ['Python', 'Pandas', 'SQL', 'Stored Procedures', 'Data Validation'],
+        icon: <Database className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-slate-800/50 to-slate-850/50'
     },
     {
         id: 'prof-5',
-        title: 'AI Automation Assistants',
-        description: 'Enterprise assistants for data validation, summarization, insights extraction, document processing, and workflow automation.',
-        tags: ['RAG', 'LangChain', 'Workflow Automation', 'NLP'],
+        title: 'Autonomous LangChain Security Agent',
+        description: 'Architected an autonomous agent utilizing LangChain, LLMs, conditional Python programmatic logic, and multi-node verification approval workflows to interpret cloud vulnerabilities and automatically generate Terraform fixes, reducing remediation effort by ~60%.',
+        tags: ['Python', 'LangChain', 'LLMs', 'Terraform', 'Workflow Automation'],
         icon: <Brain className="text-accent" size={32} />,
         image: 'bg-gradient-to-br from-cyan-900/50 to-slate-850/50'
     }
